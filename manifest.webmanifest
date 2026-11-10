@@ -1,0 +1,21 @@
+{
+  "name": "H24 Creationz",
+  "short_name": "H24",
+  "description": "Brand, website, SEO and AI video studio in Chennai. Think different. Be different.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#170B0C",
+  "theme_color": "#170B0C",
+  "icons": [
+    {"src": "assets/brand/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "assets/brand/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "assets/brand/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Build a brand kit", "url": "./#builder"},
+    {"name": "Free findability check", "url": "./#check"},
+    {"name": "Start a project", "url": "./#contact"},
+    {"name": "Minimal edition", "url": "./minimal/"}
+  ]
+}

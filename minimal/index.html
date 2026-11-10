@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>H24 Creationz | Minimal edition</title>
+<meta name="description" content="H24 Creationz, the calm edition. Branding from scratch, rebranding, websites, Google Maps, SEO, GEO and AI video, from a studio in Chennai.">
+<link rel="canonical" href="https://harshavarthanep.github.io/h24-creationz/minimal/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="H24 Creationz">
+<meta property="og:title" content="H24 Creationz | Easy to find, hard to forget">
+<meta property="og:description" content="Start, rebrand or grow your brand. Logo, website, cards, social, Google Maps, SEO and AI video, from one studio.">
+<meta property="og:image" content="https://harshavarthanep.github.io/h24-creationz/assets/brand/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="icon" href="../assets/brand/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+(function(){var d=document.documentElement;d.classList.add('js');var t=null;try{t=localStorage.getItem('h24-theme')}catch(e){}
+if(t==='light'||t==='dark')d.setAttribute('data-theme',t);
+d.setAttribute('data-eff',t||(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));})();
+</script>
+<style>
+@font-face{font-family:'InterH24';src:url(../assets/fonts/inter.woff2) format('woff2');font-weight:100 900;font-display:swap}
+:root{
+  --bg:#F2F2F7;--card:#FFFFFF;--card2:#F2F2F7;--label:#000;--sec:rgba(60,60,67,.6);--ter:rgba(60,60,67,.3);--sep:rgba(60,60,67,.16);--fill:rgba(120,120,128,.12);
+  --tint:#FF3B30;--blue:#007AFF;--green:#34C759;--orange:#FF9500;--bar:rgba(249,249,249,.78);
+  --font:-apple-system,BlinkMacSystemFont,'SF Pro Text','InterH24',system-ui,'Segoe UI',Roboto,sans-serif;
+  --display:-apple-system,BlinkMacSystemFont,'SF Pro Display','InterH24',system-ui,'Segoe UI',Roboto,sans-serif;
+  --r:22px;--spring:cubic-bezier(.34,1.4,.64,1);--out:cubic-bezier(.16,1,.3,1);
+  --fire:linear-gradient(160deg,#FFD640,#FFA21E 38%,#F45D0A 72%,#D3220F);--water:linear-gradient(160deg,#8BE8FF,#25B8F4 45%,#0D66D0);
+  /* shared with springboard + covers */
+  --wall:radial-gradient(80% 60% at 0% 100%,rgba(255,162,30,.55),transparent 60%),radial-gradient(70% 60% at 100% 0%,rgba(37,184,244,.5),transparent 60%),#F7F1EA;
+  --appLabel:#1C1C1E;--bg2:var(--card);--line:var(--sep);--line2:var(--ter);--ink:var(--label);--dim:var(--sec);--faint:var(--ter);--red:var(--tint);--amber:var(--orange);
+  color-scheme:light;
+}
+:root[data-theme="dark"]{--bg:#000;--card:#1C1C1E;--card2:#2C2C2E;--label:#FFF;--sec:rgba(235,235,245,.6);--ter:rgba(235,235,245,.3);--sep:rgba(84,84,88,.55);--fill:rgba(120,120,128,.24);--tint:#FF453A;--blue:#0A84FF;--green:#30D158;--orange:#FF9F0A;--bar:rgba(22,22,24,.78);
+  --wall:radial-gradient(80% 60% at 0% 100%,rgba(244,93,10,.55),transparent 60%),radial-gradient(70% 60% at 100% 0%,rgba(37,184,244,.45),transparent 60%),#0D0B0C;--appLabel:#F2F2F7;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--card:#1C1C1E;--card2:#2C2C2E;--label:#FFF;--sec:rgba(235,235,245,.6);--ter:rgba(235,235,245,.3);--sep:rgba(84,84,88,.55);--fill:rgba(120,120,128,.24);--tint:#FF453A;--blue:#0A84FF;--green:#30D158;--orange:#FF9F0A;--bar:rgba(22,22,24,.78);
+  --wall:radial-gradient(80% 60% at 0% 100%,rgba(244,93,10,.55),transparent 60%),radial-gradient(70% 60% at 100% 0%,rgba(37,184,244,.45),transparent 60%),#0D0B0C;--appLabel:#F2F2F7;color-scheme:dark}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--label);font:400 17px/1.47 var(--font);letter-spacing:-.01em;-webkit-font-smoothing:antialiased;overflow-x:clip;transition:background-color .4s,color .4s;padding-bottom:env(safe-area-inset-bottom)}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit;color:inherit}button{background:none;border:0;cursor:pointer}
+img,svg,canvas{display:block;max-width:100%}ul,ol{list-style:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:10px}
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+html.vt::view-transition-new(root){animation:vtIn .7s cubic-bezier(.7,0,.2,1)}
+@keyframes vtIn{from{clip-path:circle(0 at var(--vx,50%) var(--vy,0))}to{clip-path:circle(var(--vr,150vmax) at var(--vx,50%) var(--vy,0))}}
+.wrap{max-width:1080px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left)) 0 max(16px,env(safe-area-inset-right))}
+.sec{padding:44px 0 8px}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:0 4px 14px}
+.sh h2{font:700 clamp(24px,3.2vw,32px)/1.12 var(--display);letter-spacing:-.025em}
+.sh p{color:var(--sec);font-size:15px;margin-top:4px;max-width:52ch}
+.sh a,.sh button.lnk{color:var(--blue);font-size:16px;white-space:nowrap}
+.card{background:var(--card);border-radius:var(--r);overflow:hidden}
+.pad{padding:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 22px;border-radius:14px;font-weight:600;font-size:17px;transition:transform .35s var(--spring),opacity .2s,background-color .2s}
+.btn:active{transform:scale(.96);opacity:.85}
+.btn-fill{background:var(--tint);color:#fff}
+.btn-tint{background:color-mix(in srgb,var(--tint) 14%,transparent);color:var(--tint)}
+.btn-gray{background:var(--fill);color:var(--label)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn svg{width:18px;height:18px}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:0 16px;border-radius:999px;background:var(--blue);color:#fff;font-weight:700;font-size:15px;transition:transform .3s var(--spring)}
+.pill:active{transform:scale(.94)}
+.pill.ghost{background:var(--fill);color:var(--blue)}
+
+/* Nav bar */
+.nb{position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top);background:var(--bar);-webkit-backdrop-filter:saturate(1.8) blur(20px);backdrop-filter:saturate(1.8) blur(20px);box-shadow:0 .5px 0 var(--sep);transition:box-shadow .3s}
+.nb.flat{box-shadow:none;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
+.nb .in{height:52px;display:flex;align-items:center;gap:12px}
+.nb .brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:17px}
+.nb .brand img{width:30px;height:30px;border-radius:8px;box-shadow:0 0 0 .5px var(--sep)}
+.nb .mid{position:absolute;left:50%;transform:translate(-50%,6px);font-weight:600;font-size:17px;opacity:0;transition:opacity .25s,transform .35s var(--out);pointer-events:none}
+.nb.titled .mid{opacity:1;transform:translate(-50%,0)}
+.nb .links{display:flex;gap:2px;margin-left:auto}
+.nb .links a{padding:7px 12px;border-radius:999px;font-size:15px;color:var(--sec);transition:color .2s,background-color .2s}
+.nb .links a:hover{color:var(--label)}
+.nb .links a[aria-current="true"]{color:var(--label);background:var(--fill)}
+.nb .r{display:flex;align-items:center;gap:10px;margin-left:12px}
+/* iOS switch */
+.sw{position:relative;width:51px;height:31px;flex:none;-webkit-appearance:none;appearance:none;border-radius:999px;background:var(--fill);cursor:pointer;transition:background-color .25s}
+.sw::after{content:"";position:absolute;top:2px;left:2px;width:27px;height:27px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.15),0 1px 1px rgba(0,0,0,.16);transition:transform .35s var(--spring),width .2s}
+.sw:active::after{width:33px}
+.sw:checked{background:var(--green)}
+.sw:checked::after{transform:translateX(20px)}
+.sw:checked:active::after{transform:translateX(14px)}
+.theme-sw{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--sec)}
+.theme-sw svg{width:16px;height:16px}
+
+/* Hero */
+.hero{padding:28px 0 8px}
+.lt{font:800 clamp(38px,7vw,76px)/1.02 var(--display);letter-spacing:-.035em;max-width:16ch}
+.lt .fw{background:var(--fire);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lt .ww{background:var(--water);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{margin-top:16px;color:var(--sec);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
+.hero .ctas{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+.hero-card{margin-top:28px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;padding:22px;border-radius:28px;background:var(--card)}
+.hero-card .logo{width:clamp(96px,16vw,150px);aspect-ratio:1;border-radius:20px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.12),0 0 0 .5px var(--sep);transform:rotate(-4deg);transition:transform .6s var(--spring)}
+.hero-card:hover .logo{transform:rotate(0) scale(1.03)}
+.hero-card .logo img{width:100%;height:100%}
+.hero-card b{display:block;font:700 clamp(20px,2.4vw,28px)/1.15 var(--display);letter-spacing:-.02em}
+.hero-card p{color:var(--sec);margin-top:6px}
+.stats{display:flex;gap:22px;margin-top:14px;flex-wrap:wrap}
+.stats div{font-size:13px;color:var(--sec)}
+.stats div b{display:block;font:700 22px/1 var(--display);color:var(--label)}
+.clients{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.clients a{padding:8px 14px;border-radius:999px;background:var(--card);font-size:15px;font-weight:500;transition:transform .3s var(--spring)}
+.clients a:active{transform:scale(.95)}
+
+/* Today cards (work) */
+.today{display:grid;grid-auto-flow:column;grid-auto-columns:min(84%,420px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 18px;margin:0 -16px;scrollbar-width:none}
+.today::-webkit-scrollbar{display:none}
+.tcard{scroll-snap-align:start;text-align:left;border-radius:24px;overflow:hidden;background:var(--card);box-shadow:0 10px 30px rgba(0,0,0,.08);transition:transform .45s var(--spring)}
+.tcard:active{transform:scale(.97)}
+.tcard .cover{border-radius:0}
+.tcard .cap{padding:14px 18px 18px}
+.tcard .cap small{display:block;font-size:13px;font-weight:600;color:var(--sec);text-transform:uppercase;letter-spacing:.02em}
+.tcard .cap b{display:block;margin-top:4px;font:700 20px/1.2 var(--display);letter-spacing:-.02em}
+.frame-src{display:none}
+/* ================= Covers ================= */
+.cover{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:10px;container-type:inline-size;background:var(--cbg);color:var(--cink);isolation:isolate}
+.cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+.cover .art{position:absolute;inset:0;width:100%;height:100%}
+.cover .tag{position:absolute;left:5cqw;top:4.6cqw;font:600 max(10px,1.8cqw)/1 var(--sans);opacity:.78;z-index:1}
+.cover .nm{position:absolute;left:4.6cqw;bottom:3.2cqw;font:800 12cqw/.82 var(--display);letter-spacing:-.01em;z-index:1}
+.cv-rmax{--cbg:#0C2148;--cink:#EAF2FF}
+.cv-rmax circle{fill:none;stroke:#59A9FF}
+.cv-rmax .pulse circle{animation:pulse 3.2s var(--ease) infinite;transform-origin:1340px 760px;transform-box:view-box}
+.cv-rmax .pulse circle:nth-child(2){animation-delay:.5s}.cv-rmax .pulse circle:nth-child(3){animation-delay:1s}
+@keyframes pulse{0%{transform:scale(.6);opacity:0}30%{opacity:.9}100%{transform:scale(1.4);opacity:0}}
+.cv-arjuna{--cbg:#E4EEE9;--cink:#0E3B31;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 23v14M23 30h14' stroke='%231F7A63' stroke-width='2.5' stroke-opacity='.35'/%3E%3C/svg%3E");background-size:5cqw 5cqw}
+.cv-lks{--cbg:#F3EDE4;--cink:#1B2A4C}
+.cv-lks .dots{position:absolute;inset:0;background:radial-gradient(circle,#2E4C8C 30%,transparent 33%) 0 0/2.6cqw 2.6cqw;-webkit-mask-image:linear-gradient(115deg,transparent 35%,#000 90%);mask-image:linear-gradient(115deg,transparent 35%,#000 90%);opacity:.85}
+.cv-blend{--cbg:#17344F;--cink:#EAF1F8;background-image:linear-gradient(rgba(234,241,248,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(234,241,248,.08) 1px,transparent 1px);background-size:3cqw 3cqw}
+.cv-ocb{--cbg:#1B1714;--cink:#EFE5D3;background-image:repeating-linear-gradient(90deg,rgba(239,229,211,.07) 0 1px,transparent 1px 2.2cqw)}
+.cv-dap{--cbg:#FF5A22;--cink:#1C0A04;background-image:repeating-linear-gradient(118deg,rgba(28,10,4,.13) 0 3cqw,transparent 3cqw 6.4cqw)}
+
+
+
+/* Grouped lists */
+.group{background:var(--card);border-radius:var(--r);overflow:hidden}
+.row{display:flex;align-items:center;gap:14px;min-height:56px;padding:10px 16px;width:100%;text-align:left;position:relative;transition:background-color .15s}
+.row+.row::before{content:"";position:absolute;top:0;right:0;left:62px;height:.5px;background:var(--sep)}
+.group.plain .row+.row::before{left:16px}
+.row:active{background:var(--fill)}
+.row .ico{flex:none;width:32px;height:32px;border-radius:8px;display:grid;place-items:center;color:#fff}
+.row .ico svg{width:18px;height:18px}
+.row .tx{flex:1;min-width:0}
+.row .tx b{display:block;font-weight:500}
+.row .tx small{display:block;color:var(--sec);font-size:14px;line-height:1.35;margin-top:2px}
+.row .val{color:var(--sec);font-size:16px}
+.chev{flex:none;width:9px;height:14px;color:var(--ter)}
+.row input[type=text],.row input[type=tel],.row input[type=url],.row textarea{flex:1;min-width:0;border:0;background:transparent;font-size:17px;text-align:right;outline:none}
+.row input::placeholder,.row textarea::placeholder{color:var(--ter)}
+.row label{flex:none;width:118px}
+.row textarea{text-align:left;min-height:84px;resize:vertical;line-height:1.4}
+.foot-note{margin:8px 20px 0;color:var(--sec);font-size:13px}
+
+/* Segmented control */
+.segc{position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;padding:2px;border-radius:9px;background:var(--fill)}
+.segc .ind{position:absolute;top:2px;bottom:2px;left:2px;width:calc((100% - 4px)/var(--n));border-radius:7px;background:var(--card);box-shadow:0 3px 8px rgba(0,0,0,.12),0 3px 1px rgba(0,0,0,.04);transform:translateX(calc(var(--i)*100%));transition:transform .4s var(--spring)}
+:root[data-eff="dark"] .segc .ind{background:#636366}
+.segc button{position:relative;z-index:1;min-height:32px;padding:4px 8px;font-size:14px;font-weight:500;border-radius:7px;white-space:nowrap}
+.segc button[aria-checked="true"]{font-weight:600}
+.scroll-x{overflow-x:auto;scrollbar-width:none}.scroll-x::-webkit-scrollbar{display:none}
+
+/* Brand kit: wallet */
+.kitg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+.dots{display:flex;gap:12px;padding:12px 16px}
+.dots button{width:30px;height:30px;border-radius:50%;position:relative;transition:transform .35s var(--spring)}
+.dots button::after{content:"";position:absolute;inset:-4px;border-radius:50%;box-shadow:inset 0 0 0 2px transparent}
+.dots button[aria-checked="true"]::after{box-shadow:inset 0 0 0 2px var(--blue)}
+.wallet{position:relative;padding:18px;border-radius:28px;background:var(--card);min-height:260px;transition:height .5s var(--out)}
+.wallet .wh{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.wallet .wh b{font:700 20px/1.2 var(--display);letter-spacing:-.02em}
+.wallet .wh span{color:var(--sec);font-size:14px}
+.stackw{position:relative;transition:height .5s var(--out)}
+.pass{position:absolute;left:0;right:0;height:190px;border-radius:16px;padding:16px 18px;color:#fff;box-shadow:0 -2px 10px rgba(0,0,0,.12);transition:transform .55s var(--spring),opacity .3s;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;overflow:hidden}
+.pass .top{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:600;opacity:.9}
+.pass .top i{width:28px;height:28px;border-radius:8px;background:rgba(255,255,255,.22);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:12px}
+.pass .nm{font:700 24px/1.1 var(--display);letter-spacing:-.02em}
+.pass .sm{font-size:13px;opacity:.8}
+.pass .qr{position:absolute;right:16px;bottom:16px;width:64px;height:64px;padding:4px;border-radius:8px;background:#fff}
+.pass .qr canvas{width:100%;height:100%;image-rendering:pixelated}
+.pass.enter{animation:pIn .6s var(--spring) both}
+@keyframes pIn{from{opacity:0;transform:translateY(60px) scale(.94)}}
+.wallet .empty{color:var(--sec);text-align:center;padding:50px 0}
+
+/* QR pass */
+.qrg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+.wpass{border-radius:22px;overflow:hidden;background:#1C1C1E;color:#fff;box-shadow:0 20px 50px rgba(0,0,0,.18);max-width:380px;margin:0 auto}
+.wpass .hd{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;background:linear-gradient(135deg,#F45D0A,#D3220F)}
+.wpass .hd img{width:34px;height:34px;border-radius:8px}
+.wpass .hd span{font-size:13px;font-weight:600;opacity:.9}
+.wpass .bd{padding:18px}
+.wpass .bd small{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;opacity:.6}
+.wpass .bd b{display:block;font:700 26px/1.1 var(--display);letter-spacing:-.02em;margin-top:4px}
+.wpass .bd .f2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.wpass .bd .f2 span{display:block;font-size:15px;margin-top:3px}
+.wpass .qrw{display:grid;place-items:center;padding:20px 0 24px;border-top:1px dashed rgba(255,255,255,.18)}
+.wpass .qrw div{width:170px;aspect-ratio:1;padding:10px;border-radius:12px;background:#fff}
+.wpass .qrw canvas{width:100%;height:100%;image-rendering:pixelated}
+.wpass .qrw p{margin-top:10px;font-size:13px;opacity:.7}
+
+/* Activity ring check */
+.chk{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:16px;align-items:start}
+.ringc{padding:24px;border-radius:28px;background:#000;color:#fff;position:sticky;top:72px}
+.ringc .rw{display:flex;align-items:center;gap:20px}
+.ring{width:130px;height:130px;flex:none}
+.ring circle{fill:none;stroke-width:16;stroke-linecap:round}
+.ring .bg{stroke:rgba(255,55,95,.22)}
+.ring .fg{stroke:url(#rg);stroke-dasharray:345.6;stroke-dashoffset:345.6;transition:stroke-dashoffset 1s var(--out);transform:rotate(-90deg);transform-origin:center}
+.ringc .n{font:700 44px/1 var(--display)}
+.ringc .n small{font-size:20px;opacity:.6}
+.ringc h3{margin-top:16px;font:700 22px/1.2 var(--display)}
+.ringc p{margin-top:6px;color:rgba(235,235,245,.7);font-size:15px}
+.ringc ul{margin-top:12px;display:grid;gap:8px}
+.ringc li{font-size:15px;padding-left:18px;position:relative;color:rgba(235,235,245,.9)}
+.ringc li::before{content:"";position:absolute;left:0;top:.5em;width:8px;height:8px;border-radius:50%;background:#FF375F}
+.ringc .btn{margin-top:16px}
+
+/* Decode slider */
+.dec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:center}
+.dstage{perspective:1600px;display:grid;place-items:center;padding:30px 10px;border-radius:28px;background:var(--card);min-height:420px;overflow:hidden}
+.dstack{position:relative;width:min(80%,340px);aspect-ratio:1;transform-style:preserve-3d}
+.dstack img{position:absolute;inset:0;width:100%;height:100%;transition:opacity .3s}
+:root[data-eff="dark"] .dstack img:not(:first-child){filter:drop-shadow(0 0 .6px rgba(255,255,255,.9))}
+.range{-webkit-appearance:none;appearance:none;width:100%;height:28px;background:transparent}
+.range::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:linear-gradient(90deg,var(--blue) var(--p,0%),var(--fill) var(--p,0%))}
+.range::-moz-range-track{height:4px;border-radius:2px;background:var(--fill)}
+.range::-moz-range-progress{height:4px;border-radius:2px;background:var(--blue)}
+.range::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:#fff;margin-top:-12px;box-shadow:0 3px 8px rgba(0,0,0,.15),0 0 0 .5px rgba(0,0,0,.04)}
+.range::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:#fff;border:0;box-shadow:0 3px 8px rgba(0,0,0,.15)}
+.layers .row .ico{border-radius:50%}
+.layers .row.on{background:color-mix(in srgb,var(--blue) 10%,transparent)}
+
+/* Values */
+.vcard{margin-top:12px;padding:22px;border-radius:var(--r);background:var(--card)}
+.vcard h3{font:700 26px/1.1 var(--display);letter-spacing:-.02em}
+.vcard p{color:var(--sec);margin-top:6px}
+.vcard ul{margin-top:14px;display:grid;gap:8px}
+.vcard li{display:flex;gap:10px;align-items:flex-start}
+.vcard li::before{content:"";flex:none;width:20px;height:20px;border-radius:50%;margin-top:2px;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2l2.3 2.3 4.7-5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/12px no-repeat}
+.fade{animation:fd .45s var(--out)}
+@keyframes fd{from{opacity:0;transform:translateY(8px)}}
+
+/* Messages (testimonials) */
+.msgs{display:grid;grid-auto-flow:column;grid-auto-columns:min(86%,400px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 14px;margin:0 -16px;scrollbar-width:none}
+.msgs::-webkit-scrollbar{display:none}
+.msg{scroll-snap-align:start;display:flex;flex-direction:column;gap:10px;padding:18px;border-radius:24px;background:var(--card)}
+.msg .b{position:relative;align-self:flex-start;padding:12px 16px;border-radius:20px;background:var(--fill);font-size:16px;line-height:1.4}
+.msg .b::after{content:"";position:absolute;left:-6px;bottom:0;width:16px;height:16px;background:var(--fill);border-bottom-right-radius:14px;clip-path:polygon(0 100%,100% 0,100% 100%)}
+.msg .who{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--sec)}
+.msg .who i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font-style:normal;font-weight:700;font-size:13px}
+.msg .who b{color:var(--label);font-weight:600}
+
+/* Springboard (shared) */
+/* ================= Products: springboard ================= */
+.lab{background:var(--bg2)}
+.lab-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,80px);align-items:center}
+.lab-head p{margin-top:22px;color:var(--dim);max-width:42ch;font-size:18px}
+.counts{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.counts div{font-size:14px;color:var(--dim);line-height:1.3}
+.counts b{display:block;font:800 44px/1 var(--display);color:var(--ink)}
+.lab-head .ctas{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.device{position:relative;border-radius:46px;padding:12px;background:#0B0B0D;box-shadow:inset 0 0 0 2px #2A2A2E,0 0 0 1px rgba(0,0,0,.4),0 50px 120px rgba(0,0,0,.35);max-width:640px;margin-left:auto}
+.screen{position:relative;border-radius:35px;overflow:hidden;background:var(--wall);padding:14px clamp(14px,3vw,26px) 18px;transition:background .6s}
+.ios-bar{display:flex;justify-content:space-between;align-items:center;font:600 14px/1 var(--sans);color:var(--appLabel);padding:4px 10px 22px}
+.ios-bar .r{display:flex;gap:6px;align-items:center}
+.ios-bar svg{height:12px;width:auto}
+.springs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px 10px}
+.app{display:flex;flex-direction:column;align-items:center;gap:7px;color:var(--appLabel);font-size:12px;line-height:1.2;text-align:center;-webkit-touch-callout:none;user-select:none}
+.app .ic{position:relative;width:100%;max-width:70px;aspect-ratio:1;border-radius:23%;display:grid;place-items:center;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.25),inset 0 -1px 0 rgba(0,0,0,.15);transition:transform .45s var(--spring),filter .2s;overflow:hidden}
+.app .ic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.22),transparent 45%);pointer-events:none}
+.app .ic svg{width:50%;height:50%}
+.app .ic.dark-glyph{color:#1C1C1E}
+@media (hover:hover){.app:hover .ic{transform:translateY(-4px) scale(1.04)}}
+.app:active .ic{transform:scale(.86);filter:brightness(.85)}
+.app .badge-n{position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;border-radius:999px;background:#FF3B30;color:#fff;font:700 11px/20px var(--sans);padding:0 5px;z-index:2}
+.app .ic.folder{place-items:stretch;align-content:center;background:rgba(255,255,255,.28);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);display:grid;grid-template-columns:repeat(3,1fr);gap:7%;padding:16%}
+[data-eff="light"] .app .ic.folder{background:rgba(255,255,255,.55)}
+.app .ic.folder i{border-radius:22%;display:block;aspect-ratio:1}
+.app .ic.book{border-radius:6px 14px 14px 6px;box-shadow:inset 6px 0 0 rgba(0,0,0,.25),0 8px 20px rgba(0,0,0,.22);font:900 22px/1 var(--display);color:#fff}
+.app .ic img{width:100%;height:100%;object-fit:cover}
+.app-wrap{position:relative}
+.grp-lb{grid-column:1/-1;font:600 12px/1 var(--sans);color:var(--appLabel);opacity:.65;margin:6px 0 -6px 4px;text-align:left}
+.dock{margin-top:24px;padding:12px;border-radius:30px;background:rgba(255,255,255,.2);-webkit-backdrop-filter:blur(24px) saturate(1.6);backdrop-filter:blur(24px) saturate(1.6);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+[data-eff="light"] .dock{background:rgba(255,255,255,.45)}
+.dock .app>span:not(.ic){display:none}
+.home-ind{width:34%;height:5px;border-radius:3px;background:var(--appLabel);opacity:.5;margin:14px auto 0}
+/* app sheet */
+.asheet{margin:auto;width:min(600px,94vw);max-height:92svh;border:0;border-radius:32px;background:var(--bg2);color:var(--ink);padding:0;overflow:auto;box-shadow:0 40px 120px rgba(0,0,0,.5)}
+.asheet::backdrop{background:rgba(0,0,0,.45);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.as-hd{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;padding:28px 28px 20px}
+.as-hd .ic{width:104px;height:104px;border-radius:23%;display:grid;place-items:center;color:#fff;box-shadow:0 14px 30px rgba(0,0,0,.25);position:relative;overflow:hidden}
+.as-hd .ic svg{width:52%;height:52%}
+.as-hd .ic.dark-glyph{color:#1C1C1E}
+.as-hd .ic.book{border-radius:8px 18px 18px 8px;font:900 34px/1 var(--display)}
+.as-hd h3{font:800 34px/1 var(--display)}
+.as-hd p{color:var(--dim);font-size:15px;margin-top:4px}
+.as-hd .get{margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 20px;border-radius:999px;background:#0A84FF;color:#fff;font-weight:700;font-size:15px;transition:transform .3s var(--spring)}
+.pill:active{transform:scale(.94)}
+.pill.ghost{background:var(--line);color:var(--ink)}
+.as-meta{display:grid;grid-template-columns:repeat(3,1fr);margin:0 28px;padding:14px 0;border-block:1px solid var(--line);text-align:center}
+.as-meta div+div{border-left:1px solid var(--line)}
+.as-meta small{display:block;font-size:11px;color:var(--faint);font-weight:600;letter-spacing:.04em}
+.as-meta b{display:block;margin-top:4px;font:800 20px/1 var(--display)}
+.as-body{padding:22px 28px 30px}
+.as-body p{color:var(--dim)}
+.as-body ul.feat{margin-top:16px;display:grid;gap:10px}
+.as-body ul.feat li{display:flex;gap:10px;align-items:flex-start}
+.as-body ul.feat li::before{content:"";flex:none;width:20px;height:20px;border-radius:50%;margin-top:2px;background:#30D158 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2l2.3 2.3 4.7-5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/12px no-repeat}
+.as-store{margin-top:22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.as-store img{height:52px;width:auto}
+.as-store .amz{background:#fff;border-radius:12px;padding:8px 12px;display:inline-block}
+.as-store .amz img{height:48px}
+.as-list{margin-top:16px;display:grid;gap:4px}
+.as-list li{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.as-list li i{width:40px;height:40px;border-radius:23%;flex:none;display:grid;place-items:center;color:#fff;font:900 16px/1 var(--display)}
+.as-x{position:sticky;top:12px;float:right;margin:12px 12px 0 0;width:36px;height:36px;border-radius:50%;background:var(--line);display:grid;place-items:center;z-index:2}
+.as-x svg{width:14px;height:14px}
+.legal{margin-top:14px;font-size:12px;color:var(--faint)}
+
+
+.lab{background:transparent}
+.device{margin:0 auto}
+
+/* About: contact card */
+.contactc{text-align:center;padding:28px 20px 22px;border-radius:28px;background:var(--card)}
+.contactc .av{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:50% 14%;margin:0 auto;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.contactc h3{margin-top:14px;font:700 28px/1.1 var(--display);letter-spacing:-.025em}
+.contactc .role{color:var(--sec);margin-top:4px}
+.contactc .motto{margin-top:10px;font:700 18px/1.2 var(--display)}
+.contactc .motto b{background:var(--fire);-webkit-background-clip:text;background-clip:text;color:transparent}
+.contactc .motto i{font-style:normal;background:var(--water);-webkit-background-clip:text;background-clip:text;color:transparent}
+.acts4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:20px}
+.acts4 a,.acts4 button{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border-radius:14px;background:var(--fill);color:var(--blue);font-size:12px;font-weight:500;transition:transform .3s var(--spring)}
+.acts4 a:active,.acts4 button:active{transform:scale(.94)}
+.acts4 svg{width:22px;height:22px}
+.aboutg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:16px;align-items:start}
+
+/* Offers */
+.offers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.offer{padding:20px;border-radius:var(--r);background:var(--card);display:flex;flex-direction:column;gap:8px}
+.offer .tagf{align-self:flex-start;font-size:12px;font-weight:700;color:var(--tint);text-transform:uppercase;letter-spacing:.04em}
+.offer h3{font:700 21px/1.2 var(--display);letter-spacing:-.02em}
+.offer p{color:var(--sec);font-size:15px;flex:1}
+.offer.hot{background:var(--fire);color:#1C0C0D}
+.offer.hot p,.offer.hot .tagf{color:rgba(28,12,13,.75)}
+
+/* Tokens (chips) */
+.tokens{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px}
+.tok{min-height:34px;padding:0 14px;border-radius:999px;background:var(--fill);font-size:15px;transition:background-color .2s,color .2s,transform .3s var(--spring);display:inline-flex;align-items:center;gap:6px}
+.tok:active{transform:scale(.94)}
+.tok[aria-pressed="true"],.tok[aria-checked="true"]{background:var(--blue);color:#fff}
+.tok .hot{width:6px;height:6px;border-radius:50%;background:var(--tint)}
+.tok[aria-pressed="true"] .hot{background:#fff}
+.tgrp{width:100%;font-size:12px;font-weight:600;color:var(--sec);text-transform:uppercase;letter-spacing:.04em;margin-top:4px}
+.bubble-w{padding:16px;border-radius:var(--r);background:var(--card)}
+.bubble{margin-left:auto;max-width:90%;padding:10px 14px;border-radius:18px 18px 4px 18px;background:#34C759;color:#fff;font-size:15.5px;line-height:1.4;white-space:pre-wrap;word-break:break-word}
+.err{min-height:20px;color:var(--tint);font-size:14px;margin:8px 4px}
+.sendrow{display:flex;gap:10px;flex-wrap:wrap}
+
+/* Sheets */
+.sheet{margin:auto auto 0;width:100%;max-width:640px;max-height:92svh;border:0;border-radius:14px 14px 0 0;background:var(--bg);color:var(--label);padding:0;overflow:auto;box-shadow:0 -10px 40px rgba(0,0,0,.2)}
+.sheet::backdrop{background:rgba(0,0,0,.35)}
+.sheet[open]{animation:shUp .5s var(--out)}
+.sheet.closing{animation:shDown .3s ease forwards}
+@keyframes shUp{from{transform:translateY(100%)}}
+@keyframes shDown{to{transform:translateY(100%)}}
+.grab{position:sticky;top:0;z-index:2;display:grid;place-items:center;padding:8px 0 4px;background:var(--bg);cursor:grab;touch-action:none}
+.grab i{width:36px;height:5px;border-radius:3px;background:var(--ter)}
+.sh-top{display:flex;justify-content:space-between;align-items:center;padding:6px 18px 10px}
+.sh-top h3{font:700 24px/1.15 var(--display);letter-spacing:-.025em}
+.sh-top .done{color:var(--blue);font-weight:600;font-size:17px}
+.sh-body{padding:0 16px calc(24px + env(safe-area-inset-bottom))}
+.sh-body .lead{color:var(--sec);margin:0 4px 16px}
+.cover-wrap{border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+.pd-cols{display:grid;gap:12px}
+.pd-cols>div{padding:16px;border-radius:var(--r);background:var(--card)}
+.pd-cols h4{font-size:13px;font-weight:600;color:var(--sec);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.pd-cols li{padding-left:16px;position:relative;margin-bottom:6px}
+.pd-cols li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--tint)}
+.pd-acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.detail h3{font:700 26px/1.15 var(--display);letter-spacing:-.025em}
+.detail .meta{color:var(--sec);margin:4px 0 14px}
+.detail .btn{min-height:46px;border-radius:12px;font-size:16px;padding:0 18px}
+.detail .btn-ghost{background:var(--fill);color:var(--label)}
+.detail .btn-red{background:var(--tint);color:#fff}
+/* app sheet in minimal = bottom sheet */
+.asheet{margin:auto auto 0;width:100%;max-width:640px;border-radius:14px 14px 0 0;max-height:92svh}
+.asheet[open]{animation:shUp .5s var(--out)}
+
+/* Tab bar */
+.tabbar{display:none}
+.toast{position:fixed;left:50%;top:calc(64px + env(safe-area-inset-top));z-index:120;transform:translate(-50%,-14px);opacity:0;padding:10px 16px;border-radius:14px;background:var(--bar);-webkit-backdrop-filter:blur(20px) saturate(1.8);backdrop-filter:blur(20px) saturate(1.8);box-shadow:0 10px 30px rgba(0,0,0,.15),0 0 0 .5px var(--sep);font-size:15px;font-weight:600;transition:opacity .25s,transform .4s var(--spring);pointer-events:none;max-width:90vw;text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+footer{padding:48px 0 calc(110px + env(safe-area-inset-bottom));color:var(--sec);font-size:14px;text-align:center}
+footer a{color:var(--blue)}
+footer .brandf{display:flex;align-items:center;justify-content:center;gap:10px;color:var(--label);font-weight:700;font-size:17px;margin-bottom:10px}
+footer .brandf img{width:40px;border-radius:6px}
+
+[hidden]{display:none!important}
+.kitg>*,.qrg>*,.chk>*,.dec>*,.aboutg>*{min-width:0}
+.nb .brand .bt{transition:opacity .25s}
+@media (min-width:901px){.nb .mid{display:none}}
+@media (max-width:900px){.nb.titled .brand .bt{opacity:0}}
+/* ===== Devices ===== */
+@media (max-width:900px){
+  .kitg,.qrg,.chk,.dec,.aboutg{grid-template-columns:1fr}
+  .ringc{position:static}
+  .offers{grid-template-columns:1fr}
+  .nb .links{display:none}
+  .nb .r{margin-left:auto}
+}
+@media (max-width:760px){
+  .tabbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(5,1fr);padding:6px 4px calc(6px + env(safe-area-inset-bottom));background:var(--bar);-webkit-backdrop-filter:saturate(1.8) blur(20px);backdrop-filter:saturate(1.8) blur(20px);box-shadow:0 -.5px 0 var(--sep)}
+  .tabbar a{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10.5px;font-weight:500;color:var(--sec);padding:2px 0;transition:color .2s}
+  .tabbar a svg{width:26px;height:26px;transition:transform .35s var(--spring)}
+  .tabbar a[aria-current="true"]{color:var(--blue)}
+  .tabbar a[aria-current="true"] svg{transform:scale(1.08)}
+  .nb .startbtn{display:none}
+  .hero-card{grid-template-columns:1fr;text-align:left}
+  .row label{width:96px}
+  .springs{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (max-width:360px){.segc button{font-size:12.5px;padding:4px 3px}#valSeg{grid-auto-columns:auto}.acts4 a,.acts4 button{font-size:11px}.lt{font-size:34px}.theme-sw span{display:none}.acts4{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1500px){.wrap{max-width:1200px}}
+@media (horizontal-viewport-segments:2){
+  .kitg,.qrg,.chk,.dec,.aboutg{grid-template-columns:1fr 1fr;column-gap:calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0) + 16px)}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header class="nb flat" id="nb">
+  <div class="wrap in">
+    <a class="brand" href="#top" aria-label="H24 Creationz, back to top"><img src="../assets/brand/mark-96.png" alt="" width="30" height="30"><span class="bt">H24 Creationz</span></a>
+    <span class="mid" aria-hidden="true">H24 Creationz</span>
+    <nav class="links" aria-label="Main"><a href="#work">Work</a><a href="#services">Services</a><a href="#kit">Brand kit</a><a href="#apps">Apps</a><a href="#about">About</a></nav>
+    <div class="r">
+      <label class="theme-sw"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 13.2A8.5 8.5 0 1 1 10.8 3a6.6 6.6 0 0 0 10.2 10.2z"/></svg><span>Dark</span><input class="sw" type="checkbox" id="themeSw" aria-label="Dark mode"></label>
+      <a class="pill startbtn" href="#contact">Start</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <h1 class="lt">Easy to find. <span class="fw">Hard</span> to <span class="ww">forget.</span></h1>
+    <p class="sub">H24 Creationz builds brands from scratch, rebrands businesses, and gets them found on Google, Maps and in AI answers. One studio, one point of contact, start to finish.</p>
+    <div class="ctas"><a class="btn btn-fill" href="#kit">Build your brand kit</a><a class="btn btn-tint" href="#work">See the work</a></div>
+    <div class="hero-card">
+      <div class="logo"><img src="../assets/brand/h24-logo-600.webp" alt="H24 Creationz logo" width="600" height="600"></div>
+      <div><b>Think different. Be different.</b><p>A brand, website, SEO and AI video studio in Chennai, working with businesses in India and the USA.</p>
+        <div class="stats"><div><b>6</b>brands built</div><div><b>20+</b>web apps</div><div><b>2</b>books</div><div><b>2</b>countries</div></div></div>
+    </div>
+    <div class="clients" aria-label="Clients">
+      <a href="http://rmaxisp.com/" target="_blank" rel="noopener">Rmax</a><a href="https://www.arjunahospital.in/" target="_blank" rel="noopener">Arjuna Hospital</a><a href="https://www.lkspolyclinic.com/" target="_blank" rel="noopener">LKS Polyclinic</a><a href="https://www.blendinfra.com/" target="_blank" rel="noopener">Blend Infra</a><a href="https://ocbofficial.com/" target="_blank" rel="noopener">OCB</a><a href="https://dapfitt.com/" target="_blank" rel="noopener">DAP Fitness</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="workT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="workT">Today at the studio</h2><p>Real businesses, live today. Tap a card for the story.</p></div></div>
+    <div class="today" id="today"></div>
+    <div class="frame-src"><article class="frame" data-id="rmax" data-name="Rmax">
+        <button class="hit" aria-label="Read the Rmax story">
+          <div class="cover cv-rmax">
+            <svg class="art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g stroke-width="3"><circle cx="1340" cy="760" r="130" stroke-opacity=".9"/><circle cx="1340" cy="760" r="260" stroke-opacity=".6"/><circle cx="1340" cy="760" r="390" stroke-opacity=".4"/><circle cx="1340" cy="760" r="520" stroke-opacity=".25"/><circle cx="1340" cy="760" r="650" stroke-opacity=".14"/></g><g class="pulse" stroke-width="2"><circle cx="1340" cy="760" r="420"/><circle cx="1340" cy="760" r="420"/><circle cx="1340" cy="760" r="420"/></g></svg>
+            <span class="tag">Internet service, Chennai</span><span class="nm">Rmax</span>
+          </div>
+        </button>
+        <div class="fcap"><div><span class="ind">Website, installable app, AI video</span><h3>An ISP website that installs like an app</h3></div><a class="chip-link" href="http://rmaxisp.com/" target="_blank" rel="noopener">Visit site</a></div>
+        <div class="detail">
+          <h3>An ISP website that installs like an app</h3><p class="meta">Rmax, internet service provider, Chennai</p>
+          <div class="pd-cols">
+            <div><h4>The problem</h4><p>Most of Rmax's customers arrive on their phones. They needed plans and support details fast, and a brand that stays visible around every festival.</p></div>
+            <div><h4>What we did</h4><ul><li>Designed and built the website</li><li>Made it installable as a web app</li><li>Set up hosting and look after updates</li><li>Produce AI brand and festival videos</li></ul></div>
+            <div><h4>What changed</h4><ul><li>Customers add Rmax to their home screen like an app</li><li>One brand across the website and every campaign</li><li>A steady flow of festival content without film shoots</li></ul></div>
+          </div>
+          <div class="pd-acts"><a class="btn btn-ghost" href="http://rmaxisp.com/" target="_blank" rel="noopener">Visit rmaxisp.com</a><button class="btn btn-red" data-similar="web,video">Start a similar project</button></div>
+        </div>
+      </article>
+<article class="frame" data-id="arjuna" data-name="Arjuna Hospital">
+        <button class="hit" aria-label="Read the Arjuna Hospital story">
+          <div class="cover cv-arjuna">
+            <svg class="art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M1250 230v380M1060 420h380" stroke="#1F7A63" stroke-width="110" stroke-linecap="round"/><circle cx="1250" cy="420" r="300" fill="none" stroke="#1F7A63" stroke-width="3" stroke-opacity=".4"/></svg>
+            <span class="tag">Hospital</span><span class="nm">Arjuna<br>Hospital</span>
+          </div>
+        </button>
+        <div class="fcap"><div><span class="ind">Brand identity, website, medical SEO</span><h3>A hospital brand, built from nothing</h3></div><a class="chip-link" href="https://www.arjunahospital.in/" target="_blank" rel="noopener">Visit site</a></div>
+        <div class="detail">
+          <h3>A hospital brand, built from nothing</h3><p class="meta">Arjuna Hospital, healthcare</p>
+          <div class="pd-cols">
+            <div><h4>The problem</h4><p>Patients judge a hospital online before they visit. Arjuna needed to look trustworthy and be found locally, starting with no brand system at all.</p></div>
+            <div><h4>What we did</h4><ul><li>Positioning, logo and visual identity</li><li>Website design and build</li><li>Medical content and on-page SEO</li><li>Social media set-up and content</li></ul></div>
+            <div><h4>What changed</h4><ul><li>One consistent brand across web and social</li><li>A live website the hospital shares with patients</li><li>A search presence built on real medical content</li></ul></div>
+          </div>
+          <div class="pd-acts"><a class="btn btn-ghost" href="https://www.arjunahospital.in/" target="_blank" rel="noopener">Visit the site</a><button class="btn btn-red" data-similar="brand,web,seo">Start a similar project</button></div>
+        </div>
+      </article>
+<article class="frame" data-id="lks" data-name="LKS Polyclinic">
+        <button class="hit" aria-label="Read the LKS Polyclinic story">
+          <div class="cover cv-lks"><div class="dots" aria-hidden="true"></div>
+            <svg class="art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="1180" cy="330" r="190" fill="none" stroke="#1B2A4C" stroke-width="3"/><circle cx="1180" cy="330" r="120" fill="#C9423A"/></svg>
+            <span class="tag">Polyclinic</span><span class="nm">LKS<br>Polyclinic</span>
+          </div>
+        </button>
+        <div class="fcap"><div><span class="ind">Brand identity, digital revamp, social</span><h3>A polyclinic, brought up to date</h3></div><a class="chip-link" href="https://www.lkspolyclinic.com/" target="_blank" rel="noopener">Visit site</a></div>
+        <div class="detail">
+          <h3>A polyclinic, brought up to date</h3><p class="meta">LKS Polyclinic, healthcare</p>
+          <div class="pd-cols">
+            <div><h4>The problem</h4><p>The clinic's look and online presence needed to match the care it gives, with one clear picture for patients across web and social.</p></div>
+            <div><h4>What we did</h4><ul><li>Brand identity</li><li>Digital revamp of the website</li><li>Social media integration</li></ul></div>
+            <div><h4>What changed</h4><ul><li>A consistent identity across web and social</li><li>A modern site the clinic points patients to</li></ul></div>
+          </div>
+          <div class="pd-acts"><a class="btn btn-ghost" href="https://www.lkspolyclinic.com/" target="_blank" rel="noopener">Visit the site</a><button class="btn btn-red" data-similar="brand,web">Start a similar project</button></div>
+        </div>
+      </article>
+<article class="frame" data-id="blend" data-name="Blend Infra">
+        <button class="hit" aria-label="Read the Blend Infra story">
+          <div class="cover cv-blend">
+            <svg class="art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#EAF1F8" stroke-width="3" stroke-linejoin="round"><path d="M900 700V420l260-170 260 170v280z" stroke-opacity=".9"/><path d="M860 446L1160 250l300 196" stroke-opacity=".9"/><rect x="1000" y="500" width="90" height="90" stroke-opacity=".7"/><rect x="1230" y="500" width="90" height="90" stroke-opacity=".7"/><path d="M1120 700V580h80v120" stroke-opacity=".7"/><path d="M820 760h680M900 790v-30M1420 790v-30" stroke-opacity=".45" stroke-dasharray="10 10"/></svg>
+            <span class="tag">Construction, Tamil Nadu</span><span class="nm">Blend<br>Infra</span>
+          </div>
+        </button>
+        <div class="fcap"><div><span class="ind">Website, project gallery, enquiry form</span><h3>A builder's website made to bring in enquiries</h3></div><a class="chip-link" href="https://www.blendinfra.com/" target="_blank" rel="noopener">Visit site</a></div>
+        <div class="detail">
+          <h3>A builder's website made to bring in enquiries</h3><p class="meta">Blend Infra, construction and interiors, Tamil Nadu</p>
+          <div class="pd-cols">
+            <div><h4>The problem</h4><p>Homeowners compare builders by their past work. Blend Infra needed one place to show projects and turn interest into a conversation.</p></div>
+            <div><h4>What we did</h4><ul><li>Designed and built the website</li><li>Services, project gallery and testimonials</li><li>Enquiry form and hosting</li></ul></div>
+            <div><h4>What changed</h4><ul><li>Prospects see the work and enquire on the same page</li><li>A site the team points every lead to</li></ul></div>
+          </div>
+          <div class="pd-acts"><a class="btn btn-ghost" href="https://www.blendinfra.com/" target="_blank" rel="noopener">Visit blendinfra.com</a><button class="btn btn-red" data-similar="web,seo">Start a similar project</button></div>
+        </div>
+      </article>
+<article class="frame" data-id="ocb" data-name="OCB">
+        <button class="hit" aria-label="Read the OCB story">
+          <div class="cover cv-ocb">
+            <svg class="art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#EFE5D3" stroke-width="3"><path d="M1150 200h220l50 90v410h-320V290z" stroke-opacity=".75"/><circle cx="1260" cy="270" r="18" stroke-opacity=".75"/><path d="M1260 252c0-80 60-110 120-120" stroke-opacity=".5"/><path d="M1150 420h270M1150 450h270" stroke-opacity=".35"/></svg>
+            <span class="tag">Clothing brand, USA</span><span class="nm">OCB</span>
+          </div>
+        </button>
+        <div class="fcap"><div><span class="ind">Pre-launch site, AI video ads</span><h3>Launching a US clothing brand before day one</h3></div><a class="chip-link" href="https://ocbofficial.com/" target="_blank" rel="noopener">Visit site</a></div>
+        <div class="detail">
+          <h3>Launching a US clothing brand before day one</h3><p class="meta">OCB, fashion, USA</p>
+          <div class="pd-cols">
+            <div><h4>The problem</h4><p>A new clothing brand needed to build interest before launch, with premium visuals and no budget for a traditional film shoot.</p></div>
+            <div><h4>What we did</h4><ul><li>Built the pre-launch website and lookbook</li><li>Added an early-access sign-up</li><li>Produced multi-scene AI video ads</li></ul></div>
+            <div><h4>What changed</h4><ul><li>The brand collects early-access sign-ups before launch</li><li>Premium ad creative, produced remotely across time zones</li></ul></div>
+          </div>
+          <div class="pd-acts"><a class="btn btn-ghost" href="https://ocbofficial.com/" target="_blank" rel="noopener">Visit ocbofficial.com</a><button class="btn btn-red" data-similar="web,video">Start a similar project</button></div>
+        </div>
+      </article>
+<article class="frame" data-id="dap" data-name="DAP Fitness">
+        <button class="hit" aria-label="Read the DAP Fitness story">
+          <div class="cover cv-dap">
+            <svg class="art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="#1C0A04"><rect x="1040" y="400" width="60" height="200" rx="14"/><rect x="1110" y="360" width="50" height="280" rx="12"/><rect x="1170" y="475" width="220" height="50" rx="10"/><rect x="1400" y="360" width="50" height="280" rx="12"/><rect x="1460" y="400" width="60" height="200" rx="14"/></g></svg>
+            <span class="tag">Fitness studio</span><span class="nm">DAP<br>Fitness</span>
+          </div>
+        </button>
+        <div class="fcap"><div><span class="ind">Website, local SEO</span><h3>A studio website built for local search</h3></div><a class="chip-link" href="https://dapfitt.com/" target="_blank" rel="noopener">Visit site</a></div>
+        <div class="detail">
+          <h3>A studio website built for local search</h3><p class="meta">DAP Fitness Studio, fitness</p>
+          <div class="pd-cols">
+            <div><h4>The problem</h4><p>A fitness studio wins members from its own neighbourhood, so it needs to show up when people nearby search.</p></div>
+            <div><h4>What we did</h4><ul><li>Modern studio website, designed and built</li><li>Local SEO set-up</li></ul></div>
+            <div><h4>What changed</h4><ul><li>A modern site built for local search visibility</li></ul></div>
+          </div>
+          <div class="pd-acts"><a class="btn btn-ghost" href="https://dapfitt.com/" target="_blank" rel="noopener">Visit dapfitt.com</a><button class="btn btn-red" data-similar="web,seo">Start a similar project</button></div>
+        </div>
+      </article></div>
+  </div>
+</section>
+
+<section class="sec" id="services" aria-labelledby="svcT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="svcT">Services</h2><p>Tap one to see what's included and pick what you need.</p></div></div>
+    <div class="group" id="svcGroup"></div>
+  </div>
+</section>
+
+<section class="sec" id="kit" aria-labelledby="kitT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="kitT">Build your brand kit</h2><p>Starting, rebranding, growing or launching? Choose, type your name, and your kit stacks up like passes in a wallet.</p></div></div>
+    <div class="kitg">
+      <div>
+        <div class="scroll-x" style="margin-bottom:12px"><div class="segc" id="stageSeg" role="radiogroup" aria-label="Where are you?" style="--n:4;--i:0;min-width:440px"><span class="ind"></span><button role="radio" aria-checked="true" data-stage="new">Starting</button><button role="radio" aria-checked="false" data-stage="re">Rebranding</button><button role="radio" aria-checked="false" data-stage="grow">Growing</button><button role="radio" aria-checked="false" data-stage="launch">Launching</button></div></div>
+        <div class="group plain"><div class="row"><label for="bbName">Business</label><input type="text" id="bbName" value="Raman Dental" maxlength="28" placeholder="Your business name"></div></div>
+        <div class="group plain" style="margin-top:12px"><div class="dots" id="pals" role="radiogroup" aria-label="Colour mood"></div></div>
+        <div class="group plain" style="margin-top:12px" id="kitItems"></div>
+      </div>
+      <div>
+        <div class="wallet" id="wallet"><div class="wh"><b id="walletT">Raman Dental</b><span><span id="kitN">0</span> pieces · tap to fan out</span></div><div class="stackw" id="stackw"></div></div>
+        <button class="btn btn-fill" id="kitSend" style="width:100%;margin-top:12px">Send this kit to us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="qr" aria-labelledby="qrT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="qrT">Business card QR</h2><p>A free tool. Make a QR that opens WhatsApp, your website, or saves your number. Download it in seconds.</p></div></div>
+    <div class="qrg">
+      <div>
+        <div class="segc" id="qrSeg" role="radiogroup" aria-label="What the QR opens" style="--n:3;--i:0;margin-bottom:12px"><span class="ind"></span><button role="radio" aria-checked="true" data-q="wa">WhatsApp</button><button role="radio" aria-checked="false" data-q="web">Website</button><button role="radio" aria-checked="false" data-q="vcard">Contact</button></div>
+        <div class="group plain">
+          <div class="row"><label for="qName">Name</label><input type="text" id="qName" value="Priya Raman"></div>
+          <div class="row"><label for="qRole">Role</label><input type="text" id="qRole" value="Founder, Raman Dental"></div>
+          <div class="row"><label for="qPhone">Phone</label><input type="tel" id="qPhone" value="+91 98765 43210"></div>
+          <div class="row"><label for="qWeb">Website</label><input type="url" id="qWeb" value="ramandental.in"></div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap"><button class="btn btn-blue" id="qrDl">Download QR</button><button class="btn btn-gray" data-svc="cards">Design my cards</button></div>
+      </div>
+      <div class="wpass"><div class="hd"><img src="../assets/brand/mark-96.png" alt=""><span>Business card</span></div>
+        <div class="bd"><small>NAME</small><b id="pName">Priya Raman</b><div class="f2"><div><small>ROLE</small><span id="pRole">Founder, Raman Dental</span></div><div><small>PHONE</small><span id="pPhone">+91 98765 43210</span></div></div></div>
+        <div class="qrw"><div><canvas id="qrCanvas" width="300" height="300" aria-label="QR code"></canvas></div><p id="qrSub">Scan to chat on WhatsApp</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="check" aria-labelledby="chkT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="chkT">Can customers find you?</h2><p>Switch on what's true for your business. Nothing leaves this page.</p></div></div>
+    <div class="chk">
+      <div class="group plain" id="qs"></div>
+      <div class="ringc" aria-live="polite">
+        <div class="rw"><svg class="ring" viewBox="0 0 130 130" aria-hidden="true"><defs><linearGradient id="rg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#FA114F"/><stop offset="1" stop-color="#FF6A3D"/></linearGradient></defs><circle class="bg" cx="65" cy="65" r="55"/><circle class="fg" id="ringFg" cx="65" cy="65" r="55"/></svg><div class="n" id="ringN">0<small>/8</small></div></div>
+        <h3 id="ringT">Close your ring.</h3><p id="ringP">Every switch you turn on is one thing helping customers find you.</p><ul id="ringGaps"></ul>
+        <button class="btn btn-fill" id="gapCta" hidden>Get a plan for these gaps</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="decode" aria-labelledby="decT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="decT">Decode H24 Creationz</h2><p>Drag to take our logo apart. Every brand is built in layers, and we build yours the same way.</p></div></div>
+    <div class="dec">
+      <div class="dstage"><div class="dstack" id="dstack">
+        <img src="../assets/brand/layer-paper.webp" alt="" loading="lazy"><img src="../assets/brand/layer-frame.webp" alt="" loading="lazy"><img src="../assets/brand/layer-ink.webp" alt="" loading="lazy"><img src="../assets/brand/layer-fire.webp" alt="" loading="lazy"><img src="../assets/brand/layer-water.webp" alt="" loading="lazy">
+      </div></div>
+      <div>
+        <div class="group plain pad" style="padding:14px 16px"><input class="range" id="decR" type="range" min="0" max="100" value="0" aria-label="Take the logo apart"><div style="display:flex;justify-content:space-between;color:var(--sec);font-size:13px"><span>Assembled</span><button class="lnk" id="decPlay" style="color:var(--blue)">Play</button><span>Exploded</span></div></div>
+        <div class="group layers" style="margin-top:12px" id="layerList"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="values" aria-labelledby="valT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="valT">How we value a brand</h2><p>Clarity + Consistency + Credibility + Character = Trust.</p></div></div>
+    <div class="segc" id="valSeg" role="tablist" style="--n:4;--i:0"><span class="ind"></span><button role="tab" aria-checked="true">Clarity</button><button role="tab" aria-checked="false">Consistency</button><button role="tab" aria-checked="false">Credibility</button><button role="tab" aria-checked="false">Character</button></div>
+    <div class="vcard" id="valCard"></div>
+  </div>
+</section>
+
+<section class="sec" id="words" aria-labelledby="msgT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="msgT">Messages from clients</h2><p>What it's like to work with us, in their words.</p></div></div>
+    <!-- DRAFT QUOTES: send each one to the client and keep only what they approve. -->
+    <div class="msgs">
+      <div class="msg"><div class="b">We started with nothing, not even a logo. Now patients recognise our name before they walk in.</div><div class="who"><i style="background:#1F7A63">A</i><span><b>Management</b> · Arjuna Hospital</span></div></div>
+      <div class="msg"><div class="b">Customers open our site from their home screen like an app. Festival videos go out on time, every year.</div><div class="who"><i style="background:#0C2148">R</i><span><b>Team Rmax</b> · Chennai</span></div></div>
+      <div class="msg"><div class="b">We send one link now. People see our projects and call us ready to talk.</div><div class="who"><i style="background:#17344F">B</i><span><b>Founder</b> · Blend Infra</span></div></div>
+      <div class="msg"><div class="b">We're in the US, the studio is in Chennai, and it never felt like distance.</div><div class="who"><i style="background:#1B1714">O</i><span><b>Founder</b> · OCB, USA</span></div></div>
+      <div class="msg"><div class="b">Our clinic finally looks the same everywhere. Patients notice it.</div><div class="who"><i style="background:#2E4C8C">L</i><span><b>Clinic team</b> · LKS Polyclinic</span></div></div>
+      <div class="msg"><div class="b">People nearby find us on Google and walk in already knowing our timings.</div><div class="who"><i style="background:#FF5A22">D</i><span><b>Owner</b> · DAP Fitness</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="apps" aria-labelledby="appsT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="appsT">Apps, extensions and books</h2><p>Made by the studio. Tap an icon to open it.</p></div><a href="https://harshavarthanep.github.io/apps/" target="_blank" rel="noopener">See all</a></div>
+    <div class="device"><div class="screen">
+      <div class="ios-bar" aria-hidden="true"><span id="iosTime">9:41</span><span class="r"><svg viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 27 12" fill="none" stroke="currentColor"><rect x=".5" y=".5" width="22" height="11" rx="3.2" opacity=".5"/><rect x="2" y="2" width="17" height="8" rx="2" fill="currentColor" stroke="none"/></svg></span></div>
+      <div class="springs" id="springs" role="list"></div><div class="dock" id="dock" role="list"></div><div class="home-ind" aria-hidden="true"></div>
+    </div></div>
+  </div>
+</section>
+
+<section class="sec" id="about" aria-labelledby="aboutT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="aboutT">About</h2></div></div>
+    <div class="aboutg">
+      <div class="contactc">
+        <img class="av" src="../assets/img/harsha-480.webp" alt="Harsha Varthan E P" width="120" height="120" loading="lazy" decoding="async">
+        <h3>Harsha Varthan E P</h3><p class="role">Founder, H24 Creationz · Chennai</p>
+        <p class="motto"><b>Think different.</b> <i>Be different.</i></p>
+        <div class="acts4">
+          <a href="https://wa.me/918667701001" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.9 3 3 6.6 3 11c0 2.4 1.2 4.5 3 6l-.5 3.5L9 18.6c1 .3 2 .4 3 .4 5.1 0 9-3.6 9-8s-3.9-8-9-8z"/></svg>message</a>
+          <a href="tel:+918667701001"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1z"/></svg>call</a>
+          <button id="copyMail"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5zm2.2-.5L12 11l6.8-5z"/></svg>mail</button>
+          <a href="https://harshavarthanep.github.io/portfolio/?for=client" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z"/></svg>portfolio</a>
+        </div>
+      </div>
+      <div>
+        <div class="group plain">
+          <div class="row"><span class="tx"><b>Founded H24 Creationz</b></span><span class="val">2016</span></div>
+          <div class="row"><span class="tx"><b>Published books</b></span><span class="val">2, on Amazon</span></div>
+          <div class="row"><span class="tx"><b>Client projects led and audited</b></span><span class="val">20+</span></div>
+          <div class="row"><span class="tx"><b>Works with</b></span><span class="val">India and the USA</span></div>
+        </div>
+        <div class="card pad" style="margin-top:12px;color:var(--sec)">H24 Creationz began as a home for everything Harsha made: books, apps, games and music. Today it builds brands and websites for businesses that want to stand apart. You talk to the person doing the work, get a written plan before anything starts, and own every file at the end.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faqT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="faqT">Questions</h2></div></div>
+    <div class="group plain" id="faqList"></div>
+  </div>
+</section>
+
+<section class="sec" id="offers" aria-labelledby="offT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="offT">Start with something free</h2></div></div>
+    <div class="offers">
+      <div class="offer hot"><span class="tagf">Most popular</span><h3>Free 15-minute brand call</h3><p>Leave with three things you can improve this week, whether you hire us or not.</p><a class="btn btn-gray" style="background:#1C0C0D;color:#fff" target="_blank" rel="noopener" href="https://wa.me/918667701001?text=Hi%20H24%20Creationz%2C%20I%27d%20like%20a%20free%2015-minute%20brand%20call.">Book on WhatsApp</a></div>
+      <div class="offer"><span class="tagf">Free</span><h3>Findability report</h3><p>Send your business name and city. We'll tell you what to fix first on Google, Maps and AI answers.</p><a class="btn btn-tint" target="_blank" rel="noopener" href="https://wa.me/918667701001?text=Hi%20H24%20Creationz%2C%20please%20send%20me%20a%20free%20findability%20report.%20My%20business%20name%20and%20city%3A%20">Request on WhatsApp</a></div>
+      <div class="offer"><span class="tagf">Free tool</span><h3>QR for your business card</h3><p>Make a working QR for WhatsApp, your website or your contact.</p><a class="btn btn-tint" href="#qr">Make my QR</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact" aria-labelledby="ctT">
+  <div class="wrap">
+    <div class="sh"><div><h2 id="ctT">Tell us what you're making</h2><p>You'll get questions back, then a written plan and quote. No commitment until you approve.</p></div></div>
+    <form id="brief" novalidate>
+      <div class="group plain">
+        <div class="row"><label for="fName">Name</label><input type="text" id="fName" autocomplete="name" placeholder="Required"></div>
+        <div class="row"><label for="fBiz">Business</label><input type="text" id="fBiz" autocomplete="organization" placeholder="Optional"></div>
+        <div class="row"><label for="fCity">City</label><input type="text" id="fCity" autocomplete="address-level2" placeholder="Optional"></div>
+      </div>
+      <p class="foot-note">Where are you right now?</p>
+      <div class="group plain" style="margin-top:6px"><div class="tokens" id="stageToks" role="radiogroup" aria-label="Where are you right now?"></div></div>
+      <p class="foot-note">What do you need? Red dot: most asked for right now.</p>
+      <div class="group plain" style="margin-top:6px"><div class="tokens" id="svcToks"></div></div>
+      <p class="foot-note">When do you want to start?</p>
+      <div class="group plain" style="margin-top:6px"><div class="tokens" id="whenToks" role="radiogroup" aria-label="When do you want to start?"></div></div>
+      <div class="group plain" style="margin-top:20px"><div class="row" style="align-items:flex-start"><textarea id="fMsg" placeholder="Anything else? A line or two about your business."></textarea></div></div>
+      <div class="bubble-w" style="margin-top:12px"><div class="bubble" id="bubble"></div></div>
+      <p class="err" id="err" role="alert"></p>
+      <div class="sendrow"><button class="btn btn-fill" type="submit" data-via="wa">Send on WhatsApp</button><button class="btn btn-gray" type="submit" data-via="mail">Send by email</button><button class="btn btn-gray" type="button" id="copyMsg">Copy</button></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brandf"><img src="../assets/brand/h24-logo-600.webp" alt="" width="40" height="40" loading="lazy">H24 Creationz</div>
+    <p>Prefer cinema? <a href="../">Open the studio edition</a></p>
+    <p style="margin-top:8px">© <span id="yr">2026</span> H24 Creationz, Chennai · <a href="../assets/brand/h24-logo-4k.png" download>Logo (4K)</a></p>
+    <p style="margin-top:8px;font-size:12px;color:var(--ter)">Amazon's trademark is used under license from Amazon.com, Inc. or its affiliates. Google Play and Chrome Web Store are trademarks of Google LLC.</p>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Tabs">
+  <a href="#top" data-tab="top"><svg viewBox="0 0 28 28" fill="currentColor"><path d="M14 4.5 3.5 13h3v10h6v-6h3v6h6V13h3z"/></svg>Home</a>
+  <a href="#work" data-tab="work"><svg viewBox="0 0 28 28" fill="currentColor"><rect x="4" y="6" width="20" height="16" rx="4"/><rect x="8" y="3" width="12" height="2.5" rx="1.25" opacity=".55"/></svg>Today</a>
+  <a href="#kit" data-tab="kit"><svg viewBox="0 0 28 28" fill="currentColor"><rect x="4" y="13" width="20" height="11" rx="3"/><rect x="5.5" y="9" width="17" height="6" rx="2.5" opacity=".7"/><rect x="7" y="5" width="14" height="6" rx="2.5" opacity=".45"/></svg>Brand kit</a>
+  <a href="#apps" data-tab="apps"><svg viewBox="0 0 28 28" fill="currentColor"><rect x="4" y="4" width="8.5" height="8.5" rx="2.5"/><rect x="15.5" y="4" width="8.5" height="8.5" rx="2.5"/><rect x="4" y="15.5" width="8.5" height="8.5" rx="2.5"/><rect x="15.5" y="15.5" width="8.5" height="8.5" rx="2.5"/></svg>Apps</a>
+  <a href="#contact" data-tab="contact"><svg viewBox="0 0 28 28" fill="currentColor"><path d="M14 4C8 4 3.5 8 3.5 13c0 2.8 1.4 5.2 3.6 6.8L6.5 24l4.3-2.3c1 .3 2.1.4 3.2.4 6 0 10.5-4 10.5-9S20 4 14 4z"/></svg>Contact</a>
+</nav>
+
+<dialog class="sheet" id="sheet" aria-label="Details" data-lenis-prevent></dialog>
+<dialog class="asheet" id="appSheet" aria-label="App details"></dialog>
+<div class="toast" id="toast" role="status"></div>
+<script src="../assets/js/minimal.js" defer></script>
+</body>
+</html>
