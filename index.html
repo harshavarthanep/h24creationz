@@ -529,6 +529,14 @@ html.vt::view-transition-new(root){animation:vtIn .85s cubic-bezier(.7,0,.2,1)}
 .card3d{perspective:1400px;display:grid;place-items:center;padding:20px 0}
 .card-in{position:relative;width:min(440px,100%);aspect-ratio:1.75;transform-style:preserve-3d;transition:transform 1s var(--out);cursor:pointer}
 .card-in.flip{transform:rotateY(180deg)}
+/* Flip fix: hide the side facing away, switched when the card is edge-on */
+.cfront{transform:rotateY(0deg) translateZ(1px)}
+.cback{transform:rotateY(180deg) translateZ(1px)}
+.card-in .cfront{visibility:visible;transition:visibility 0s .14s}
+.card-in.flip .cfront{visibility:hidden}
+.card-in .cback{visibility:hidden;transition:visibility 0s .14s}
+.card-in.flip .cback{visibility:visible}
+.cfront .mono,.cfront .who{-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .cface{position:absolute;inset:0;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,255,255,.08)}
 .cfront{background:#1C0C0D;color:#F2EAE0;padding:7% 8%;display:flex;flex-direction:column;justify-content:space-between}
 .cfront::before{content:"";position:absolute;right:-20%;top:-40%;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(244,93,10,.6),transparent 70%)}
@@ -1408,14 +1416,14 @@ kbd{font:600 12.5px/1 var(--sans);padding:3px 7px;border-radius:6px;box-shadow:i
         <button role="radio" aria-checked="false" data-q="vcard">Save contact</button>
       </div>
       <div class="qr-form">
-        <div class="row2"><input id="qName" placeholder="Your name" value="Priya Raman" aria-label="Your name" autocomplete="name"><input id="qRole" placeholder="Role and business" value="Founder, Raman Dental" aria-label="Role and business"></div>
-        <div class="row2"><input id="qPhone" placeholder="Phone with country code" value="+91 98765 43210" aria-label="Phone with country code" inputmode="tel" autocomplete="tel"><input id="qWeb" placeholder="Website" value="ramandental.in" aria-label="Website" inputmode="url"></div>
+        <div class="row2"><input id="qName" placeholder="Your name" value="Harsha Varthan E P" aria-label="Your name" autocomplete="name"><input id="qRole" placeholder="Role and business" value="Founder, Raman Dental" aria-label="Role and business"></div>
+        <div class="row2"><input id="qPhone" placeholder="Phone with country code" value="+91 86677 01001" aria-label="Phone with country code" inputmode="tel" autocomplete="tel"><input id="qWeb" placeholder="Website" value="https://harshavarthanep.github.io/h24creationz/" aria-label="Website" inputmode="url"></div>
       </div>
       <div class="qr-acts"><button class="btn btn-ink" id="qrDl"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 3v10M6 9l4 4 4-4M4 17h12"/></svg>Download QR</button><button class="btn btn-ghost" data-svc="cards">Design my cards</button></div>
     </div>
     <div>
       <div class="card3d"><div class="card-in" id="cardIn" role="button" tabindex="0" aria-label="Flip the card">
-        <div class="cface cfront"><div class="mono" id="cMono">PR</div><div class="who"><b id="cName">Priya Raman</b><span id="cRole">Founder, Raman Dental</span><small id="cPhone">+91 98765 43210</small></div></div>
+        <div class="cface cfront"><div class="mono" id="cMono">HV</div><div class="who"><b id="cName">Harsha Varthan E P</b><span id="cRole">Founder, H24  Creationz</span><small id="cPhone">+91 86677 01001</small></div></div>
         <div class="cface cback"><div class="qrbox"><canvas id="qrCanvas" width="200" height="200" aria-label="QR code"></canvas></div><div><b id="qrHead">Scan to chat</b><span id="qrSub">Opens WhatsApp with your number, ready to message.</span></div></div>
       </div></div>
       <p class="flip-hint">Tap the card to flip it.</p>
